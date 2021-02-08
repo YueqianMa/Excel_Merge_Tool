@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Excel Merge Tool</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="./build/bundle.js"></script>
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====== PRELOADER ENDS START ======-->
+
+
+    <!--====== HEADER PART START ======-->
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation -->
+
+        <div id="parallax" class="header-content d-flex align-items-center">
+            <div class="header-shape shape-one layer" data-depth="0.10">
+                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-tow layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-three layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-fore layer" data-depth="0.60">
+                <img src="assets/images/banner/shape/shape-2.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-five layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/shape-1.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-six layer" data-depth="0.15">
+                <img src="assets/images/banner/shape/shape-4.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-seven layer" data-depth="0.50">
+                <img src="assets/images/banner/shape/shape-5.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-eight layer" data-depth="0.40">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-nine layer" data-depth="0.20">
+                <img src="assets/images/banner/shape/shape-6.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="header-shape shape-ten layer" data-depth="0.30">
+                <img src="assets/images/banner/shape/shape-3.png" alt="Shape">
+            </div> <!-- header shape -->
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="header-content-right">
+                            <h4 class="sub-title">Welcome to</h4>
+                            <h3 class="title">Avidian Excel sheet merge tool</h3>
+                            <p>Use choose file buttons to select excel sheets you want to merge. 
+                              Caution: File order matters, make sure file1's address is unique for every row entry.
+                              Only select .xlsx files. Each excel file(workbook) should contians only one sheet. </p>
+                            <div>
+                                <span id="fileInputText">Please select report excel file 1: </span><input type=file id="fileInput1" />
+                            </div>
+
+                            <div>
+                                <span id="fileInputText2">Please select report excel file 2: </span><input type=file id="fileInput2" />
+                            </div>
+                            <br>
+
+                            <h2 id="demo" onclick="handleCombine()">
+                                <a class="main-btn">Combine files</a>
+                            </h2>
+                        </div> <!-- header content right -->
+                    </div>
+
+                </div> <!-- row -->
+            </div> <!-- container -->
+            <div class="header-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="header-social-icon">
+
+                            </div> <!-- header social -->
+                        </div>
+                    </div> <!-- row -->
+                </div> <!-- container -->
+            </div> <!-- header social -->
+        </div> <!-- header content -->
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+  
+    <!--====== BACK TOP TOP PART START ======-->
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="assets/js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+
+    <!--====== Appear js ======-->
+    <script src="assets/js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    
+    <!--====== XLSX js, provide support to convert input into json ======-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+    <script>
+      var isFile1 = false;//global var, set to true when user trying to upload file1
+      var isFile2 = false;//global var, set to true when user trying to upload file2
+      var file1Json;//store the json of excel input file1
+      var file2Json;//store the json of excel input file2
+
+      function handleCombine(){
+        if(!file1Json || !file2Json){
+          alert("Please select two excel files");
+        }
+        if(file1Json){
+          if(file2Json){
+            combine(file1Json, file2Json);
+          }
+        }
+      }
+      var ExcelToJSON = function() {
+        this.parseExcel = function(file) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          var data = e.target.result;
+          var workbook = XLSX.read(data, {type: 'binary'});
+
+          workbook.SheetNames.forEach(function(sheetName) {
+            var XL_row_object = XLSX.utils.sheet_to_row_object_array(workbook.Sheets[sheetName]);
+            var json_object = JSON.stringify(XL_row_object);
+            if(isFile1){//check whether user is inputing file1 or file2, and put json_object in corresponding var that's later passed into combine()
+              file1Json = json_object;
+              isFile1 = false;
+            }
+            if(isFile2){
+              file2Json = json_object;
+              isFile2 = false;
+            }
+            if(file1Json){
+              if(file2Json){
+                alert("File1 and file2 selected successfully, can click the COMBINE FILES button now!");
+              }
+            }
+            return json_object
+          })
+        };
+
+        reader.onerror = function(ex) {
+          console.log(ex);
+        };
+
+        reader.readAsBinaryString(file);
+      };
+    };
+
+    function handleFileSelect1(evt) {
+        let ext = evt.target.files[0].name.substr(evt.target.files[0].name.length - 5, 5).toLowerCase()
+        if(ext == ".xlsx"){
+          isFile1 = true;
+          var files = evt.target.files; // FileList object
+          var xl2json = new ExcelToJSON();
+          xl2json.parseExcel(files[0]);
+        }
+        else{
+          alert('Please select an excel file (file extension must be .xlsx)');
+        }
+    }
+
+    function handleFileSelect2(evt) {
+      let ext = evt.target.files[0].name.substr(evt.target.files[0].name.length - 5, 5).toLowerCase()
+      if(ext == ".xlsx"){
+        isFile2 = true;
+        var files = evt.target.files; // FileList object
+        var xl2json = new ExcelToJSON();
+        xl2json.parseExcel(files[0]);
+      }
+      else{
+        alert('Please select an excel file (File extension must be .xlsx)');
+      }
+    }
+
+    document.getElementById('fileInput1').addEventListener('change', handleFileSelect1, false);
+    document.getElementById('fileInput2').addEventListener('change', handleFileSelect2, false);
+    </script>
+    
+</body>
+</html>
